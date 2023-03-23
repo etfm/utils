@@ -1,0 +1,42 @@
+{
+  "name": "inquirer",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "lzdjack <1956252575@qq.com>",
+  "homepage": "https://github.com/etfm/utils#readme",
+  "license": "ISC",
+  "main": "lib/inquirer.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etfm/utils.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/inquirer.test.js",
+    "build": "webpack"
+  },
+  "bugs": {
+    "url": "https://github.com/etfm/utils/issues"
+  },
+  "dependencies": {
+    "ansi-escapes": "^4.2.1",
+    "chalk": "^4.1.0",
+    "cli-cursor": "^3.1.0",
+    "cli-width": "^3.0.0",
+    "external-editor": "^3.0.3",
+    "figures": "^3.0.0",
+    "lodash": "^4.17.21",
+    "mute-stream": "0.0.8",
+    "run-async": "^2.4.0",
+    "rxjs": "^6.6.6",
+    "string-width": "^4.1.0",
+    "strip-ansi": "^6.0.0",
+    "through": "^2.3.6"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "clean": "rimraf node_modules && lerna clean",
+    "reinstall": "pnpm clean && pnpm bootstrap",
+    "prepare": "is-ci || husky install",
+    "lint:lint-staged": "lint-staged -c ./lintstagedrc.json",
+    "commit": "czg",
+    "coverage": "vitest run --coverage",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@vitest/coverage-c8": "^0.29.7",
+    "cz-git": "^1.6.0",
+    "czg": "^1.6.0",
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "fast-glob": "^3.2.12",
+    "husky": "^8.0.0",
+    "is-ci": "^3.0.1",
+    "lerna": "^6.5.1",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.5",
+    "vitest": "^0.29.7",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  }
+}
